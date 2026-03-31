@@ -27,6 +27,7 @@
 #include <adore_ros2_msgs/msg/traffic_participant_set.hpp>
 #include <adore_ros2_msgs/msg/traffic_prediction.hpp>
 #include <adore_ros2_msgs/msg/traffic_signals.hpp>
+#include <adore_ros2_msgs/msg/drivable_area.hpp>
 #include <adore_ros2_msgs/msg/visualizable_object.hpp>
 #include <adore_ros2_msgs/msg/waypoints.hpp>
 
@@ -78,6 +79,8 @@ MarkerArray to_marker_array( const adore_ros2_msgs::msg::Waypoints& waypoints_ms
 MarkerArray to_marker_array( const adore_ros2_msgs::msg::VisualizableObject& msg );
 
 NavSatFix to_nav_sat_fix( const adore_ros2_msgs::msg::VehicleStateDynamic& vehicle_state_dynamic );
+
+MarkerArray to_marker_array( const adore_ros2_msgs::msg::DrivableArea& msg );
 
 GeoJSON to_geo_json( const adore_ros2_msgs::msg::GoalPoint& goal_point );
 
