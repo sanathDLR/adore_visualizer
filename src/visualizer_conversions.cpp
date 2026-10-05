@@ -34,7 +34,7 @@ parse_utm_zone( const std::string& frame_id )
 {
   auto it = frame_id.find( "UTM" );
   if( it == std::string::npos || frame_id.size() < it + 4 )
-    return { 33, "U" };
+    return { 32, "U" };
 
   std::string zone_str;
   size_t      i = it + 3;
